@@ -204,7 +204,7 @@ body{
     margin: auto;
 }
 .home__grid::before{
-    content: "React JavaScript PHP Html Css Databases";
+    content: "React JavaScript PHP Html Css Git Databases";
     position: absolute;
     top: 0;
     font-size: 8rem;
@@ -273,7 +273,7 @@ body{
         top: 100px;
     }
     .home__grid-text{
-        gap: 2rem;
+        gap: 1rem;
     }
     .home__grid-text h4{
         font-size: 1rem;
