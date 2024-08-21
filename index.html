@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"  type="image/png" href="images/logo2.png"> 
+    <title>Nicolás Lo Vento - Desarrollador Web</title>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!--NAV-->
+    <nav class="nav container">
+        <div class="nav-logo">
+            <a href="#">
+                <img src="images/logo.png">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li class="link"><a href="#home"><span>Home</span></a></li>
+            <li class="link"><a href="#conocimientos">Conocimientos</a></li>
+            <li class="link"><a href="#contacto">Contacto</a></li>
+        </ul>
+        <i class="fa-solid fa-bars" id="menuBarsOpen"></i>
+        <i class="fa-solid fa-xmark" id="menuBarsClose"></i>
+    </nav>
+    <!--MENU MOBILE-->
+    <div class="menu-mobile" id="menuMobile">
+        <a href="#home"><span>Home</span></a>
+        <a href="#conocimientos"><span>Conocimientos</span></a>
+        <a href="#contacto"><span>Contacto</span></a>
+    </div>
+    <!--HOME-->
+    <section class="home" id="home">
+        <div class="home__grid container">
+            <div class="home__grid-text">
+                <h4>Bienvenido a mi web personal</h4>
+                <h1>Hola, Mi nombre es <span>Nicolás</span>, soy Desarrollador Web</h1>
+                <p>
+                    Programador apasionado por la técnología con más de 4 años de experiencia en el desarrollo de aplicaciones web, 
+                    participando tanto de la parte Front-End como Back-End. Te invito a que descargues mi CV para conocerme más.               
+                </p>
+                <div class="home__grid-btn">
+                    <a href="cv-nicolaslovento.pdf"  download="cv-nicolaslovento.pdf"><button class="btn">Descargar cv</button></a>
+                </div>
+            </div>
+            <div class="home__grid-img">
+                <img src="images/img-header.png" >
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
