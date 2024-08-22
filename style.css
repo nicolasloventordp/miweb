@@ -193,7 +193,7 @@ body{
     margin-bottom: 2rem;
     color: #ccc;
     letter-spacing: 1px;
-    line-height: 30px;
+    line-height: 24px;
 }
 .home__grid-img img{
     width: 300px;
@@ -289,6 +289,7 @@ body{
     text-transform: uppercase;
     color: var(--color-black-1);
     font-size: 0.9rem;
+    text-align: center;
 }
 .bounce2 {
     view-timeline-name: --image;
@@ -377,7 +378,10 @@ body{
     }
     .container{
         width: 100%;
-        padding: 2rem !important;
+        padding: 3rem 2rem !important;
+    }
+    .home__grid.container{
+        padding-top: 0rem !important;
     }
     .home__grid{
         grid-template-columns: 1fr;
@@ -408,22 +412,24 @@ body{
     }
     .conocimientos__content .texto h3 {
         font-size: 1.5rem;
+        margin-bottom: 2rem;
     }
     .conocimientos__content .texto p{
-        line-height: 1.6rem;
+        line-height: 24px;
         text-align: start;
+        margin-bottom: 2rem;
     }
     .conocimientos__cards .item{
-        grid-template-rows: 60px 20px;
-        width: 100px;
+        grid-template-rows: 50px 30px;
+        width: 70px;
         height: 80px;
     }
     .conocimientos__cards .item i{
-        font-size: 2.2rem;
+        font-size: 2rem;
         margin: auto;
     }
     .conocimientos__cards .item p{
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
 }
 
