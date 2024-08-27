@@ -392,10 +392,9 @@ body{
     }
     .home__grid::before{
         font-size: 4rem;
-        top: 50px;
     }
     .home__grid-text{
-        gap: 1rem;
+        gap: 2rem;
     }
     .home__grid-text h4{
         font-size: 16px;
