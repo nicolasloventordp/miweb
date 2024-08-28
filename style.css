@@ -60,6 +60,14 @@ body{
     animation-range: entry 25% cover 30%;
 	animation-fill-mode: both;
 }
+hr{
+    position: relative;
+    width: 100%;
+    height: 1px;
+    top: -0.4rem;
+    background: var(--color-black-3);
+    display: none;
+}
 
 /** 
 ** NAV 
@@ -508,7 +516,7 @@ footer{
     } 
     .container{
         width: 100%;
-        padding: 3rem 2rem !important;
+        padding: 4rem 2rem !important;
     }
     .nav.container{
         padding: 0rem 2rem !important;
@@ -562,6 +570,9 @@ footer{
         text-align: start;
         margin-bottom: 2rem;
     }
+    .conocimientos__cards{
+        justify-content: space-between;
+    }
     .conocimientos__cards .item{
         grid-template-rows: 50px 30px;
         width: 70px;
@@ -580,22 +591,34 @@ footer{
     .grid-contacto{
         grid-template-columns: 1fr;
     }
+    hr{
+        display: block;
+    }
     .info-contacto{
-        flex-direction: row !important;
-        flex-wrap: wrap;
         order: 1;
         padding-top: 3rem;
+        position: relative;
+        gap: 2rem !important;
     }
     .info-contacto__item i{
         font-size: 1.6rem !important;
     }
     .info-contacto__item{
-        width: 130px !important;
+        width: 100% !important;
+        height: 40px;
+        grid-template-columns: 60px 200px;
+        grid-template-rows: auto !important;
     }
-    .info-contacto__item-title{
+    .info-contacto__item div{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
     }
     .info-contacto__item-texto{
-        font-size: 0.7rem !important;
+        font-size: 0.8rem !important;
+    }
+    .info-contacto__item-texto a{
+        color: #fff;
     }
     .form-contacto {
         padding-left: 0rem !important;
