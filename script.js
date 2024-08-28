@@ -1,7 +1,7 @@
 $(document).ready(function() {
-	/*emailjs.init({
+	emailjs.init({
 		publicKey: "QmH-HASr6BtPvF05X",
-	});*/
+	});
 	const isMobile = $(window).width() < 768;
 	if(isMobile){
 		document.getElementById("menuBarsOpen").addEventListener('click', () => {
@@ -23,7 +23,7 @@ $(document).ready(function() {
 	
 });
 
-/*function enviarEmail(event){
+function enviarEmail(event){
 	event.preventDefault();
 	const serviceID = "service_wlegu8g";
 	const templateID = "template_3ucqt7l";
@@ -76,4 +76,4 @@ function validarFormulario(params){
 function validateEmail(email) {
 	var re = /\S+@\S+\.\S+/;
 	return re.test(email);
-  }*/
+  }
