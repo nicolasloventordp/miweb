@@ -47,10 +47,15 @@ body{
     border: 1px solid var(--color-blue-2);
     transition: all 0.3s ease;
 }
-.container{
+.container-home{
     max-width: 1200px;
     margin: auto;
     padding: 2rem;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 6rem 2rem;
 }
 .animation-show{
     view-timeline-name: --image;
@@ -229,6 +234,38 @@ hr{
     transform: scale(1.1);
 }
 
+/**
+** ABOUT
+**/
+
+.about{
+    background: var(--color-black-2);
+}
+.about__grid{
+    display: grid;
+    grid-template-rows: 200px auto;
+}
+.about__grid-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about__grid-top h3{
+    color: #fff;
+    font-size: 2.4rem;
+    line-height: 2.5rem;
+}
+.about__grid-top img{
+    width: 160px;
+    height: 160px;
+    border: 3px solid var(--color-blue-5);
+    border-radius: 100px;
+}
+.about__grid p{
+    color: #ccc;
+    line-height: 2rem;
+    letter-spacing: 1px;
+}
 /**
 ** CONOCIMIENTOS
 **/
