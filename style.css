@@ -35,6 +35,7 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: var(--color-black-5);
     font-size: 17px;
+    overflow-x: hidden;
 }
 .btn{
     background: none;
@@ -77,26 +78,16 @@ hr{
 /** 
 ** NAV 
 **/
-
+.svg-header{
+    position: absolute;
+    height: 90px;
+}
 .nav{
     padding: 1rem 1rem;
     display: flex;
     align-items: center;
+    justify-content: end;
     height: 100px;
-    padding: 0 !important;
-}
-.nav i{
-    font-size: 2rem;
-    color: #fff;
-    display: none;
-}
-.nav-logo{
-    width: 120px;
-    height: 120px;
-    transition: all 0.4s ease;
-}
-.nav-logo:hover{
-    transform: scale(1.1);
 }
 .nav-links{
     list-style: none;
@@ -123,7 +114,7 @@ hr{
     width: 0;
     bottom: 0;
     left: 0;
-    background-color: var(--color-blue-3);
+    background-color: var(--color-black-1);
     transition: all 0.3s ease;
 }
 .link a:hover::after{
@@ -163,73 +154,43 @@ hr{
 
 .home{
     height: calc(100vh - 100px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    padding-top: 1rem !important;
 }
-.home__grid{
-    position: absolute;
-    padding-top: 2rem;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    align-items: center;
-    gap: 2rem;
-}
-.home__grid-text{
+.home__content{
+    height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 4rem;
-    animation: move-left-right 2s 1;
-    overflow: hidden;
+    justify-content: space-between;
 }
-.home__grid-text h4{
-    color: #ccc;
+.home__content h4{
+    color: #fff;
     font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: 1px;
 }
-.home__grid-text h1{
+.home__content h1{
     color: #fff;
-    font-size: 4rem;
+    font-size: 4.4rem;
     font-weight: 700;
-    line-height: 5rem;
+    line-height: 5.6rem;
     letter-spacing: 1px;
+    text-align: center;
 }
-.home__grid-text h1 > span{
+.home__content h1 > span{
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px #fff;
-    font-size: 4rem;
+    font-size: 4.4rem;
 }
-.home__grid-text p{
-    margin-bottom: 2rem;
+.home__content p{
     color: #ccc;
     letter-spacing: 1px;
     line-height: 24px;
-}
-.home__grid-img img{
-    width: 300px;
-    opacity: 0.6;
-    animation: move-right-left  2s 1;
-}
-.home__grid-img img{
-    max-width: 600px;
-    margin: auto;
-}
-.home__grid::before{
-    content: "React JavaScript PHP Html Css Git Databases";
-    position: absolute;
-    top: 0;
-    font-size: 8rem;
-    font-weight: 400;
-    color: var(--color-blue-3);
-    opacity: 0.2;
-    z-index: -100;
     text-align: center;
-    height: 100%;
-    overflow: hidden;
 }
-.home__grid-btn .btn:hover{
+.home__content a{
+    text-align: center;
+}
+.btn:hover{
     transform: scale(1.1);
 }
 
