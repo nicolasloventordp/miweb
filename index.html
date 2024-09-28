@@ -16,26 +16,20 @@
     
 </head>
 <body>
-    <svg  class="svg-header" viewBox="0 0 2743 151" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0 97.0931L152.389 91.7327C304.778 85.9678 609.556 75.854 914.333 91.7327C1219.11 108.218 1523.89 150.697 1828.67 151C2133.44 150.697 2438.22 108.218 2590.61 86.2713L2743 64.7287V0H2590.61C2438.22 0 2133.44 0 1828.67 0C1523.89 0 1219.11 0 914.333 0C609.556 0 304.778 0 152.389 0H0V97.0931Z" fill="#002C74" fill-opacity="0.5"/>
-    </svg>
-        
-        
+    <img class="wave-header" src="images/wave.png">
     <!--NAV-->
     <nav class="nav container">
-        
         <ul class="nav-links">
-            <li class="link"><a href="#home"><span>Home</span></a></li>
-            <li class="link"><a href="#about">Acerca de mi</a></li>
-            <li class="link"><a href="#conocimientos">Conocimientos</a></li>
-            <li class="link"><a href="#contacto">Contacto</a></li>
+            <li><a href="#about">Acerca de mi</a></li>
+            <li><a href="#conocimientos">Conocimientos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
         </ul>
         <i class="fa-solid fa-bars" id="menuBarsOpen"></i>
         <i class="fa-solid fa-xmark" id="menuBarsClose"></i>
     </nav>
     <!--MENU MOBILE-->
     <div class="menu-mobile" id="menuMobile">
-        <a href="#home"><span>Home</span></a>
+        <a href="#about"><span>Acerca de mi</span></a>
         <a href="#conocimientos"><span>Conocimientos</span></a>
         <a href="#contacto"><span>Contacto</span></a>
     </div>
@@ -54,14 +48,13 @@
     </section>
     <!--ABOUT-->
     <section class="about" id="about">
-        <div class="container">
-            <div class="about__grid">
-                <div class="about__grid-top">
-                    <h3>Acerca de mi🙋‍♂️</h3>
+        <div class="container animation-show">
+            <div class="about__content">
+                <div>
+                    <h3>Acerca de mi 🙋‍♂️</h3>
                     <img src="images/img-header.png">
                 </div>
                 <p>
-
                     En mi formación academica y laboral he aprendido y desarrollado en muchos lenguajes, especializandome
                     principalmente en el desarrollo web. En cuanto a la parte de Front-End tengo solidos conocimientos en HTML, CSS, 
                     JavaScript, React, tambien he trabajdo con herramientas de diseño como Figma y librerias como Bootstrap. En todos los
@@ -72,10 +65,10 @@
         </div>
     </section>
     <!--CONOCIMIENTOS-->
-     <section class="conocimientos" id="conocimientos">
+     <section id="conocimientos">
         <div class="container">
             <div class="conocimientos__content">
-                <h3>¿Cuáles son mis conocimientos en programación?📚</h3>
+                <h3>Mis conocimientos en programación 📚</h3>
                 <li>
                     <ul><i class="ri-html5-fill"></i></ul>
                     <ul><i class="ri-css3-fill"></i></ul>
@@ -88,22 +81,49 @@
                     <ul><i class="fa-brands fa-git"></i></ul>
                 </li>
                 <div class="conocimientos__items">
-                    <span><div class="point"></div> Maquetación y estilización con <b>HTML</b>y<b>CSS</b>.</span>
-                    <span><div class="point"></div> Comprensión de los principios y buenas prácticas de SEO.</span>
-                    <span><div class="point"></div> Manejo de diseño web responsive.</span>
-                    <span><div class="point"></div> Experiencia utilizando patrones de diseño y arquitectura de software, como MVC.</span>
-                    <span><div class="point"></div> Dominio de JavaScript y librería React JS con conocimientos de TypeScript.</span>
-                    <span><div class="point"></div> Desarrollo de aplicaciones web dinámicas y escalables utilizando PHP y framework Slim.</span>
-                    <span><div class="point"></div> Creación e integración de APIs.</span>
-                    <span><div class="point"></div> Experiencia trabajando con bases de datos PostgreSQL, MySQL y Oracle.</span>
+                    <span><div></div> Maquetación y estilización con <b>HTML</b>y<b>CSS</b>.</span>
+                    <span><div></div> Comprensión de los principios y buenas prácticas de SEO.</span>
+                    <span><div></div> Manejo de diseño web responsive.</span>
+                    <span><div></div> Experiencia utilizando patrones de diseño y arquitectura de software, como MVC.</span>
+                    <span><div></div> Dominio de JavaScript y librería React JS con conocimientos de TypeScript.</span>
+                    <span><div></div> Desarrollo de aplicaciones web dinámicas y escalables utilizando PHP y framework Slim.</span>
+                    <span><div></div> Creación e integración de APIs.</span>
+                    <span><div></div> Experiencia trabajando con bases de datos PostgreSQL, MySQL y Oracle.</span>
                 </div>
             </div>
         </div>
     </section>
     <!--CONTACTO-->
-    <section class="contacto" id="contacto">
+    <section id="contacto">
+        <img class="wave-contacto" src="images/wave2.png">
         <div class="container">
-            <div class="grid-contacto">
+            <div class="contacto__content">
+                    <h3>Enviame un email para ponernos en contacto! 📫</h3>
+                    <form>
+                        <div>
+                            <div class="form-input">
+                                <input type="text" name="from_name" id="from_name" placeholder="Nombre..."/>
+                                <span class="error" id="from_name-error">Error: asdsad</span>
+                            </div>
+                            <div class="form-input">
+                                <input type="email" name="email_id" id="email_id" placeholder="Email..."/>
+                                <span class="error" id="email_id-error">Error: asdsad</span>
+                            </div>
+                        </div>
+                        <div class="form-input">
+                            <textarea name="message" id="message" placeholder="Escriba su mensaje aquí..."></textarea>
+                            <span class="error" id="message-error">Error: asdsad</span>
+                        </div>
+                        <div class="form-buttons">
+                            <button class="btn" value="Enviar" id="btn-form" onclick="enviarEmail(event)">Enviar</button>
+                            <button class="buttonload btn" id="btn-loading">
+                                <i class="fa fa-circle-o-notch fa-spin"></i>Enviando
+                            </button>
+                            <span class="msj-success" id="message-success">Su mensaje fue enviado!</span>
+                        </div>
+                    </form>
+            </div>
+            <!--<div class="grid-contacto">
                 <div class="info-contacto">
                     <hr/>
                     <div class="info-contacto__item">
@@ -162,9 +182,8 @@
                         </div>
                         
                     </form>
-                    
                 </div>
-            </div>
+            </div>-->
         </div>
     <script src="script.js"></script>
 </body>
