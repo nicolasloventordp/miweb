@@ -15,6 +15,7 @@
     --color-black-3: #424242;
     --color-black-4: #2a2a2a;
     --color-black-5: #131313;
+    --color-white: #ecf0f1;
     
 }
 *{
@@ -38,7 +39,7 @@ body{
 }
 .btn{
     background: none;
-    color: #fff;
+    color: var(--color-white);
     margin: auto;
     width: 160px;
     padding: 0.8rem;
@@ -66,17 +67,18 @@ body{
 	animation-fill-mode: both;
 }
 h1{
-    color: #fff;
+    color: var(--color-white);
     font-size: 6rem;
     line-height: 3rem;
+    line-height: 7.3rem;
 }
 h3{
-    color: #fff;
+    color: var(--color-white);
     font-size: 2rem;
     line-height: 2.5rem;
 }
 h4{
-    color: #fff;
+    color: var(--color-white);
     font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: 1px;
@@ -110,7 +112,7 @@ h4{
 .nav-links li a{
     position: relative;
     padding-bottom: 0.5rem;
-    color: #fff;
+    color: var(--color-white);
     letter-spacing: 1px;
 }
 .nav-links li a::after{
@@ -143,7 +145,7 @@ h4{
     padding: 1rem;
 }
 .menu-mobile a span{
-    color: #fff;
+    color: var(--color-white);
     font-size: 1rem;
 }
 #menuBarsOpen{
@@ -173,7 +175,7 @@ h4{
 }
 .home__content h1 > span{
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px #fff;
+    -webkit-text-stroke: 1px var(--color-white);
     font-size: 5.6rem;
     letter-spacing: 1px;
 }
@@ -207,7 +209,7 @@ h4{
 .about__content div img{
     width: 140px;
     height: 140px;
-    border: 3px solid #fff;
+    border: 3px solid var(--color-white);
     border-radius: 100px;
     position: absolute;
     right: 10px;
@@ -223,7 +225,7 @@ h4{
 .conocimientos__content{
     display: flex;
     justify-content: center;
-    gap: 3rem;
+    gap: 4rem;
     flex-direction: column;
 }
 .conocimientos__content h3{
@@ -235,13 +237,13 @@ h4{
     gap: 2rem;
 }
 .conocimientos__content li ul i{
-    font-size: 2.4rem;
+    font-size: 3rem;
 }
 .conocimientos__items{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 1.4rem;
+    gap: 2rem;
     margin: auto;
 }
 .conocimientos__items span{
@@ -256,6 +258,10 @@ h4{
     height: 8px;
     background: #5275C8;
     border-radius: 10px;
+}
+.conocimientos__items span b{
+    color: #5275C8;
+    font-style: italic;
 }
 .bounce2{
     view-timeline-name: --image;
@@ -348,7 +354,7 @@ h4{
     font-size: 17px;
     background-color: #212529;
     border-radius: 0.8rem;
-    color: #fff;
+    color: var(--color-white);
 }
 .contacto__content form .form-buttons{
     display: flex;
@@ -367,7 +373,7 @@ h4{
     font-size: 17px;
     border-radius: 0.8rem;
     background-color: #212529;
-    color: #fff;
+    color: var(--color-white);
 }
 .contacto__content form .form-input textarea:focus{
     border: 2px solid var(--color-blue-2);
@@ -500,7 +506,7 @@ footer{
         font-size: 0.8rem !important;
     }
     .info-contacto__item-texto a{
-        color: #fff;
+        color: var(--color-white);
     }
     .form-contacto {
         padding-left: 0rem !important;
