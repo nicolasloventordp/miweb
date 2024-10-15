@@ -48,7 +48,6 @@ body{
     border: 1px solid var(--color-blue-2);
     transition: all 0.3s ease;
     border-radius: 0.8rem;
-    font-size: 17px;
 }
 .btn:hover{
     transform: scale(1.1);
@@ -89,6 +88,7 @@ h4{
 .wave-header{
     position: absolute;
     height: 120px;
+    transition: all 0.3s ease;
 }
 .nav{
     padding: 1rem 1rem;
@@ -396,9 +396,41 @@ footer{
     background: rgb(140,154,157);
     background: linear-gradient(0deg, rgba(140,154,157,1) 24%, rgba(19,19,19,1) 49%);
 }
+@media (max-width: 1930px) {
+    body{ 
+        font-size : 15px ; 
+    } 
+    .home{
+        padding: 4rem 2rem;
+        padding-top: 0rem !important;
+    }
+    .wave-header{
+        height: 80px;
+    }
+    .nav-links li:hover #wave-header{
+        height: 100px;
+    }
+    h1{
+        font-size: 4.2rem;
+        line-height: 6rem;
+    }
+    .home__content h1 > span{
+        font-size: 4.2rem;
+    }
+    h3{
+        font-size: 1.8rem;
+    }
+    h4{
+        font-size: 1rem;
+    }
+    .btn{
+        width: 140px;
+        padding: 0.6rem;
+    }
+}
 @media (max-width: 1023px) {
     body{ 
-        font-size : 16px ; 
+        font-size : 15px ; 
     } 
     .container{
         width: 100%;
