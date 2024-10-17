@@ -68,13 +68,14 @@ body{
 h1{
     color: var(--color-white);
     font-size: 6rem;
-    line-height: 3rem;
     line-height: 7.3rem;
+    letter-spacing: 2px;
 }
 h3{
     color: var(--color-white);
     font-size: 2rem;
     line-height: 2.5rem;
+    letter-spacing: 1px;
 }
 h4{
     color: var(--color-white);
@@ -206,13 +207,18 @@ h4{
     justify-content: space-between;
     align-items: center;
 }
-.about__content div img{
+.about__content-circle{
     width: 140px;
     height: 140px;
-    border: 3px solid var(--color-white);
+    /* border: 3px solid #ffffff; */
     border-radius: 100px;
     position: absolute;
     right: 10px;
+    overflow: hidden;
+    opacity: 0.8;
+}
+.about__content-circle img{
+ 
 }
 .about__content p{
     color: #ccc;
